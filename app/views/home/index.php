@@ -1,1 +1,1 @@
-<h1>Selamat datang</h1>
+<h1 class="text-6xl">Selamat datang di web saya</h1>

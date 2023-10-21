@@ -1,19 +1,19 @@
 <?php
 
-class About {
-    public function index($nama = "Rejka", $pekerjaan="Ruby on Rails developer", $umur=23) {
-        $data['nama'] = $nama;
-        $data['pekerjaan'] = $pekerjaan;
-        $data['umur'] = $umur;
-        $data['judul'] = 'About Me';
-        $this->view('templates/header', $data);
-        $this->view('about/index', $data);
-        $this->view('templates/footer');
-      }
-    public function page() {
-        $data['judul'] = 'Pages';
-        $this->view('templates/header', $data);
-        $this->view('about/page');
-        $this->view('templates/footer');
-      }
+class About extends Controller {
+  public function index($nama = "Rejka", $pekerjaan="Ruby on Rails developer", $umur=23) {
+    $data['nama'] = $nama;
+    $data['pekerjaan'] = $pekerjaan;
+    $data['umur'] = $umur;
+    $data['judul'] = 'About Me';
+    $this->views('templates/header', $data);
+    $this->views('about/index', $data);
+    $this->views('templates/footer');
+  }
+  public function page() {
+    $this->views('templates/header');
+    $this->views('about/page');
+    $this->views('templates/footer');
+    // echo "about/page";
+  }
 }
