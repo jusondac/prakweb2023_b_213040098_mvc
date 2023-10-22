@@ -16,6 +16,7 @@
     <div class="w-1/3 flex gap-10">
       <a href="<?= BASE_URL; ?>Home">Home</a>
       <a href="<?= BASE_URL; ?>About">About</a>
+      <a href="<?= BASE_URL; ?>Mahasiswa">Mahasiswa</a>
     </div>
     <div class="w-1/3"></div>
   </div>
