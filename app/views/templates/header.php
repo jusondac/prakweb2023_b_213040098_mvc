@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Halaman <?= $data['judul']; ?></title>
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script>
-        tailwind.config = {
-        }
-      </script>
-</head> 
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/style.css">
+</head>
 <body>
-  <div class="h-14 w-screen flex border p-4">
-    <div class="w-1/3 font-bold">PHP MVC</div>
-    <div class="w-1/3 flex gap-10">
-      <a href="<?= BASE_URL; ?>/Home">Home</a>
-      <a href="<?= BASE_URL; ?>/About">About</a>
-      <a href="<?= BASE_URL; ?>/Mahasiswa">Mahasiswa</a>
-    </div>
-    <div class="w-1/3"></div>
-  </div>
-  <div class="p-10">
 
-  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+      <a class="navbar-brand" href="<?= BASEURL; ?>">PHP MVC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="<?= BASEURL; ?>/Home">Home </a>
+          <a class="nav-item nav-link" href="<?= BASEURL; ?>/Mahasiswa">Mahasiswa</a>
+          <a class="nav-item nav-link" href="<?= BASEURL; ?>/About">About</a>
+        </div>
+      </div>
+  </div>
+</nav>

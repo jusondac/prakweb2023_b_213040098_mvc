@@ -1,12 +1,20 @@
-<div>
-    <h3 class="text-4xl font-bold">Daftar mahasiswa</h3>
-    <div class="flex gap-5 mt-5 flex-wrap">
-        <?php foreach($data['mahasiswa'] as $mhs) : ?>
-            <a href="<?= BASE_URL; ?>/Mahasiswa/detail/<?= $mhs["id"] ?>">
-                <ul class="w-fit bg-green-100 p-5 rounded-xl shadow-xl">
-                    <li class="font-bold"><?= $mhs["nama"]; ?></li>    
-                </ul>
-            </a>
-        <?php endforeach ?>
+<div class="container mt-3">
+
+  
+    <div class="row">
+        <div class="col-lg-6">
+          <h3>Daftar Mahasiswa</h3>
+          <ul class="list-group">
+            <?php foreach( $data['mahasiswa'] as $mhs ) : ?>
+              <li class="list-group-item">
+                  <?= $mhs['nama']; ?>
+                  
+                  <a href="<?= BASEURL; ?>/Mahasiswa/detail/<?= $mhs['id']; ?>" class="badge badge-primary float-right">detail</a>
+              </li>
+            <?php endforeach; ?>
+          </ul>      
+        </div>
     </div>
+
 </div>
+
