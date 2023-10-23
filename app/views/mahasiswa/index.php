@@ -21,7 +21,7 @@
             <?php foreach( $data['mahasiswa'] as $mhs ) : ?>
               <li class="list-group-item">
                   <?= $mhs['nama']; ?>
-                  
+                  <a href="<?= BASEURL; ?>/Mahasiswa/hapus/<?= $mhs['id']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">hapus</a>
                   <a href="<?= BASEURL; ?>/Mahasiswa/detail/<?= $mhs['id']; ?>" class="badge badge-primary float-right">detail</a>
               </li>
             <?php endforeach; ?>
